@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_cambiar_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.fabio.serviflashproject.CambiarPass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barapp">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarpass"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/barapp"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:layout_below="@+id/texto"
+                    android:id="@+id/txtanterior"
+                    android:drawableLeft="@drawable/ic_action_hardware_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña Anterior"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edittext_rounded_corners"/>
+
+                <EditText
+                    android:layout_below="@+id/txtanterior"
+                    android:id="@+id/txtnueva"
+                    android:drawableLeft="@drawable/ic_action_hardware_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña Nueva"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edittext_rounded_corners"/>
+
+                <EditText
+                    android:layout_below="@+id/txtnueva"
+                    android:id="@+id/txtrepita"
+                    android:drawableLeft="@drawable/ic_action_hardware_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Repita Contraseña"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edittext_rounded_corners"/>
+
+                <Button
+                    android:id="@+id/registro"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtrepita"
+                    android:layout_marginTop="16dp"
+                    android:text="Actualizar Contraseña"
+                    android:textColor="@color/colortexto"
+                    android:textStyle="bold"
+                    android:onClick="cambiarpass"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:background="@drawable/edittext_rounded_corners"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.mapadistinto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/top">
+
+                <fragment
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapadistinto"
+                    android:layout_width="match_parent"
+                    android:layout_height="270sp"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_marginTop="280sp"
+                android:layout_height="310dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:id="@+id/info"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:text="INFORMACION DEL PEDIDO"/>
+
+                    <EditText
+                        android:id="@+id/destinoorigen"
+                        android:layout_marginTop="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/info"
+                        android:layout_marginRight="70sp"
+                        android:drawableLeft="@drawable/ic_action_action_room"
+                        android:layout_height="wrap_content"
+                        android:hint="Direccion de origen"
+                        android:inputType="text"/>
+
+                    <EditText
+                        android:id="@+id/destinofinal"
+                        android:layout_marginTop="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/destinoorigen"
+                        android:layout_marginRight="70sp"
+                        android:drawableLeft="@drawable/ic_action_action_room"
+                        android:layout_height="wrap_content"
+                        android:hint="Direccion de destino"
+                        android:inputType="text"/>
+
+
+                    <EditText
+                        android:id="@+id/descripciondistinto"
+                        android:layout_below="@+id/destinofinal"
+                        android:layout_width="match_parent"
+                        android:hint="Descripcion del envio"
+                        android:layout_height="100px"
+                        android:drawableLeft="@drawable/ic_action_hardware_keyboard_hide"/>
+
+                    <Button
+                        android:id="@+id/buscardireccion"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginRight="5sp"
+                        android:background="@drawable/botoncircle"
+                        android:drawableLeft="@drawable/ic_action_action_room"
+                        android:layout_alignTop="@+id/destinofinal"
+                        android:paddingLeft="10sp"
+                        android:layout_alignParentEnd="true" />
+
+                    <Button
+                        android:id="@+id/solicitarpedido"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="30sp"
+                        android:layout_marginRight="30sp"
+                        android:layout_below="@+id/descripciondistinto"
+                        android:layout_marginTop="16dp"
+                        android:text="Solicitar"
+                        android:textColor="@color/colortexto"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:background="@drawable/edittext_rounded_corners"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

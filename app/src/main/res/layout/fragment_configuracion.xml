@@ -1,0 +1,195 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.configuracion">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linerperfil"
+            android:clickable="true"
+            android:onClick="perfil"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/users2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-60sp"
+                android:text="Perfil"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-3sp"
+                android:text="Modificar datos de tu perfil"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="#979797"
+            />
+
+        <LinearLayout
+            android:id="@+id/linerpass"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/key"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/keys"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-70sp"
+                android:text="Modificar Contraseña"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-3sp"
+                android:text="Modificar Contraseña"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="#979797"
+            />
+
+        <LinearLayout
+            android:id="@+id/linerfoto"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/users2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-70sp"
+                android:text="Cambiar Foto Perfil"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-3sp"
+                android:text="Modificar La Foto De Tu Perfil"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="#979797"
+            />
+
+        <LinearLayout
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/product"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/product"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-70sp"
+                android:text="Version"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20sp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70sp"
+                android:layout_marginTop="-3sp"
+                android:text="Version 1.0 2016"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:background="#979797"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
